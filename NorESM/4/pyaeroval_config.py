@@ -8,7 +8,7 @@ output_dir = <adds own path>
 coldata_dir = <adds own path>
 exp_pi = <adds own name>
 proj_id = "workshop"
-exp_id = "noresmtest"
+exp_id = "noresm"
 
 
 """
@@ -95,11 +95,9 @@ CFG["min_num_obs"] = DEFAULT_RESAMPLE_CONSTRAINTS
 Model Setup
 """
 
-AEROCOM_MEAN = (
-    {
-        "model_id": "AEROCOM-MEAN-2x3_AP3-CTRL",
-    },
-)
+AEROCOM_MEAN = {
+    "model_id": "AEROCOM-MEAN-2x3_AP3-CTRL",
+}
 
 
 NORESM = {
@@ -116,37 +114,33 @@ CFG["model_cfg"] = MODELS
 """
 Observation Setup
 """
-AERONET = (
-    dict(
-        obs_id="AeronetSunV3Lev2.daily",  # Observation ID of know network
-        web_interface_name="Aeronet-m",  # Name that is displayed on the webpage
-        obs_vars=["od550aer"],  # List of variables that is to be evaluated
-        obs_vert_type="Column",  # Observation level
-        ts_type="monthly",  # Frequency of read observations. Evaluation can not be finer than this, for this network
-        obs_filters={
-            "latitude": [
-                30,
-                82,
-            ],  # Observation filters. Each network can have own filters. Here I've uses lat, lon and alt as examples
-            "longitude": [-30, 90],
-            "altitude": [-200, 5000],
-        },
-    ),
+AERONET = dict(
+    obs_id="AeronetSunV3Lev2.daily",  # Observation ID of know network
+    web_interface_name="Aeronet-m",  # Name that is displayed on the webpage
+    obs_vars=["od550aer"],  # List of variables that is to be evaluated
+    obs_vert_type="Column",  # Observation level
+    ts_type="monthly",  # Frequency of read observations. Evaluation can not be finer than this, for this network
+    obs_filters={
+        "latitude": [
+            30,
+            82,
+        ],  # Observation filters. Each network can have own filters. Here I've uses lat, lon and alt as examples
+        "longitude": [-30, 90],
+        "altitude": [-200, 5000],
+    },
 )
 
 
-MODIS = (
-    dict(
-        obs_id="MODIS6.1terra.DT.DP.mean",  # Observation ID of know network
-        web_interface_name="Modis",  # Name that is displayed on the webpage
-        obs_vars=["od550aer"],  # List of variables that is to be evaluated
-        obs_vert_type="Column",  # Observation level
-        regrid_res_deg={  # Regridding of the data
-            "lat_res_deg": 5,
-            "lon_res_deg": 5,
-        },
-        ts_type="daily",  # Frequency of read observations. Evaluation can not be finer than this, for this network
-    ),
+MODIS = dict(
+    obs_id="MODIS6.1terra.DT.DP.mean",  # Observation ID of know network
+    web_interface_name="Modis",  # Name that is displayed on the webpage
+    obs_vars=["od550aer"],  # List of variables that is to be evaluated
+    obs_vert_type="Column",  # Observation level
+    regrid_res_deg={  # Regridding of the data
+        "lat_res_deg": 5,
+        "lon_res_deg": 5,
+    },
+    ts_type="daily",  # Frequency of read observations. Evaluation can not be finer than this, for this network
 )
 
 
@@ -160,9 +154,9 @@ PYARO = dict(
 )
 
 
-OBS_CFG = {"Pyaro-d": PYARO, "Aeromet-m": AEROCOM_MEAN, "MODIS": MODIS}
+OBS_CFG = {"Pyaro-d": PYARO, "Aeromet-m": AERONET, "MODIS": MODIS}
 
-CFG["model_cfg"] = OBS_CFG
+CFG["obs_cfg"] = OBS_CFG
 
 
 if __name__ == "__main__":
