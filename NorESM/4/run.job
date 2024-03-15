@@ -1,0 +1,34 @@
+#!/bin/bash
+
+#$ -N aeroval-noresm
+#$ -l h_rt=1:00:00
+#$ -l h_vmem=4G
+#$ -q research-el7.q
+# #$ -q research-r8b.q
+#$ -S /bin/bash
+#$ -m a
+#$ -M danielh@met.no
+#$ -o /lustre/storeB/project/fou/kl/emep/People/danielh/projects/pyaerocom/aeroval/config/logs/noresm.out
+#$ -e /lustre/storeB/project/fou/kl/emep/People/danielh/projects/pyaerocom/aeroval/config/logs/noresm.err
+#$ -R y
+#$ -j y
+
+
+##HDIR=<your working directory>
+HDIR="/lustre/storeB/project/fou/kl/emep/People/danielh/projects/pyaerocom/AeroTools-Workshops/NorESM/4"
+
+set -e
+
+cd $HDIR
+
+echo "Activating AeroTools Module"
+module use /modules/MET/rhel8/user-modules/fou-kl
+module load aerotools
+
+echo "Starting to run config file from $HDIR"
+date
+python pyaeroval_config.py
+date
+
+
+echo "Finished running evaluation"
