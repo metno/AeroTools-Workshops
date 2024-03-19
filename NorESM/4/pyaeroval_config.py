@@ -8,7 +8,7 @@ output_dir = "/home/danielh/Documents/pyaerocom/aeroval/data"
 coldata_dir = "/home/danielh/Documents/pyaerocom/aeroval/coldata"
 exp_pi = "Daniel Heinesen"
 proj_id = "workshop"
-exp_id = "noresm"
+exp_id = "noresmppi"
 
 
 """
@@ -102,7 +102,7 @@ AEROCOM_MEAN = {
 
 NORESM = {
     "model_id": "noresm",
-    "model_data_dir": "/home/danielh/Documents/noresm",
+    "model_data_dir": "/lustre/storeB/project/fou/kl/emep/People/danielh/projects/pyaerocom/workshop/noresm/test_data/noresm",
 }
 
 
