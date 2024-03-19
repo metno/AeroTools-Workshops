@@ -3,13 +3,12 @@
 #$ -N aeroval-noresm
 #$ -l h_rt=1:00:00
 #$ -l h_vmem=4G
-#$ -q research-el7.q
-# #$ -q research-r8b.q
+#$ -q research-r8.q
 #$ -S /bin/bash
 #$ -m a
 #$ -M danielh@met.no
-#$ -o /lustre/storeB/project/fou/kl/emep/People/danielh/projects/pyaerocom/aeroval/config/logs/noresm.out
-#$ -e /lustre/storeB/project/fou/kl/emep/People/danielh/projects/pyaerocom/aeroval/config/logs/noresm.err
+#$ -o /lustre/storeB/project/fou/kl/emep/People/danielh/projects/pyaerocom/AeroTools-Workshops/NorESM/4/logs/noresm.out
+#$ -e /lustre/storeB/project/fou/kl/emep/People/danielh/projects/pyaerocom/AeroTools-Workshops/NorESM/4/logs/noresm.err
 #$ -R y
 #$ -j y
 
