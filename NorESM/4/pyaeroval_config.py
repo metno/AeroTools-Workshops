@@ -4,9 +4,9 @@ from pyaerocom.io.pyaro.pyaro_config import PyaroConfig
 ############################
 ### Experiment Information. CHANGE THIS TO YOUR INFO!!!!!!
 ###########################
-output_dir = <adds own path>
-coldata_dir = <adds own path>
-exp_pi = <adds own name>
+output_dir = "/home/danielh/Documents/pyaerocom/aeroval/data"
+coldata_dir = "/home/danielh/Documents/pyaerocom/aeroval/coldata"
+exp_pi = "Daniel Heinesen"
 proj_id = "workshop"
 exp_id = "noresm"
 
