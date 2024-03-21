@@ -36,6 +36,22 @@ jupyter notebook --no-browser --ip=$(hostname -f)
 
 In the output, you should see two urls. Copy the url starting with `ppi-r8login-b1.int.met.no` into your browser. You should now see the notebooks in your browser. Open the first tutorial by locating `NorEsm/1/what_is_aerotools.ipynb`.
 
+## NOTE on AeroTools module
 
+During this workshop we have run everything though a custom module. After easter, NAC will be included in the AeroTools module, meaning you can run 
 
-TODO: Skriv om forskjell mellom .conda og ikke (pya_)
+```
+module load /modules/MET/rhel8/user-modules/fou-kl/aerotools/aerotools
+```
+
+instead. The main difference is that on the AeroTools module, all commands start with `pya_`, i.e.
+
+```
+# For jupyter notebook
+pya_jupyter notebook --no-browser --ip=$(hostname -f)
+
+# For NAC
+pya_nac --help
+```
+
+So just keep that in mind...
