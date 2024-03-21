@@ -15,6 +15,12 @@ Each folder holds a separate lecture, in the form of a jupyter notebook. Most of
 We will be running all the code in this workshop on lustre. While it is possible to read the notebooks locally and copy the code to PPI, you can also host the notebooks on PPI
 
 Log onto PPI (`ssh ppi-r8login-b1.int.met.no`), then activate AeroTools
+
+```
+module load /modules/MET/rhel8/user-modules/fou-kl/aerotools/pya-v2024.03.NorESM.conda
+```
+After easter it should be enough with
+
 ```
 module load /modules/MET/rhel8/user-modules/fou-kl/aerotools/aerotools
 ```
@@ -25,7 +31,11 @@ cd AeroTools-Workshops
 ```
 Then run 
 ```
-pya_jupyter notebook --no-browser --ip=$(hostname -f)
+jupyter notebook --no-browser --ip=$(hostname -f)
 ```
 
 In the output, you should see two urls. Copy the url starting with `ppi-r8login-b1.int.met.no` into your browser. You should now see the notebooks in your browser. Open the first tutorial by locating `NorEsm/1/what_is_aerotools.ipynb`.
+
+
+
+TODO: Skriv om forskjell mellom .conda og ikke (pya_)

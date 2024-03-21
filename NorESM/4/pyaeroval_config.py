@@ -4,11 +4,11 @@ from pyaerocom.io.pyaro.pyaro_config import PyaroConfig
 ############################
 ### Experiment Information. CHANGE THIS TO YOUR INFO!!!!!!
 ###########################
-output_dir = "/home/danielh/Documents/pyaerocom/aeroval/data"
-coldata_dir = "/home/danielh/Documents/pyaerocom/aeroval/coldata"
-exp_pi = "Daniel Heinesen"
+output_dir = <output_dir>"/data"
+coldata_dir = <output_dir>"/coldata"
+exp_pi = <our name>
 proj_id = "workshop"
-exp_id = "noresmppi"
+exp_id = "noresm"
 
 
 """
