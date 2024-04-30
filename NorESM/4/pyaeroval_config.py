@@ -4,9 +4,9 @@ from pyaerocom.io.pyaro.pyaro_config import PyaroConfig
 ############################
 ### Experiment Information. CHANGE THIS TO YOUR INFO!!!!!!
 ###########################
-output_dir = "/home/danielh/Documents/pyaerocom/aeroval/data"
-coldata_dir = "/home/danielh/Documents/pyaerocom/aeroval/coldata"
-exp_pi = "Daniel Heinesen"
+output_dir = <output_dir>"/data"
+coldata_dir = <output_dir>"/coldata"
+exp_pi = <our name>
 proj_id = "workshop"
 exp_id = "noresm"
 
@@ -102,7 +102,7 @@ AEROCOM_MEAN = {
 
 NORESM = {
     "model_id": "noresm",
-    "model_data_dir": "/home/danielh/Documents/noresm",
+    "model_data_dir": "/lustre/storeB/project/fou/kl/emep/People/danielh/projects/pyaerocom/workshop/noresm/test_data/noresm",
 }
 
 
