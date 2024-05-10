@@ -13,8 +13,8 @@ config = PyaroConfig(
     name="pmf",
     data_id=data_id,
     filename_or_obj_or_url=url,
-    filters={"variables": {"include": ["#elemental_carbon#ug C m-3"]}},
-    name_map={"#elemental_carbon#ug C m-3": "concCec"},
+    filters={"variables": {"include": ["pm10#organic_carbon#ug C m-3"]}},
+    name_map={"pm10#organic_carbon#ug C m-3": "concCec"},
 )
 
 rp = pya.io.ReadUngridded(configs=[config])
