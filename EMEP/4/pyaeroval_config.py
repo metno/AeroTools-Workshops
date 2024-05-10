@@ -22,8 +22,8 @@ CFG = dict(
     map_zoom="World",  # Zoom level. For EMEP, Europe is typically used
     # regions_how="country",        # Calculates statistics for different regions. Typically "country" is used, but that does not work for satellite data
     # Time and Frequency Options
-    ts_type="daily",  # Colocation frequency (no statistics in higher resolution can be computed)
-    freqs=["daily", "monthly", "yearly"],  # Frequencies that are evaluated
+    ts_type="monthly",  # Colocation frequency (no statistics in higher resolution can be computed)
+    freqs=["monthly", "yearly"],  # Frequencies that are evaluated
     main_freq="monthly",  # Frequency that is displayed when opening webpage
     periods=[
         "2018"
