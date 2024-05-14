@@ -19,8 +19,8 @@ CFG = dict(
     add_model_maps=False,  # Adds a plot of the whole map. Very slow!!!
     only_model_maps=False,  # Adds only plot above, without any other evaluation
     filter_name="ALL-wMOUNTAINS",  # Regional filter for analysis
-    map_zoom="World",  # Zoom level. For EMEP, Europe is typically used
-    # regions_how="country",        # Calculates statistics for different regions. Typically "country" is used, but that does not work for satellite data
+    map_zoom="Europe",  # Zoom level. For EMEP, Europe is typically used
+    regions_how="country",  # Calculates statistics for different regions. Typically "country" is used, but that does not work for satellite data
     # Time and Frequency Options
     ts_type="monthly",  # Colocation frequency (no statistics in higher resolution can be computed)
     freqs=["monthly", "yearly"],  # Frequencies that are evaluated
@@ -200,7 +200,7 @@ PYARO = dict(
 # %%
 OBS_CFG = {
     "Pyaro-m": PYARO,
-    # "EBAS-m": EBAS,
+    "EBAS-m": EBAS,
 }  # "EEA-m": EEA}
 
 CFG["obs_cfg"] = OBS_CFG

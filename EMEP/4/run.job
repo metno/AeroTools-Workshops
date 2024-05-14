@@ -1,20 +1,20 @@
 #!/bin/bash
 
-#$ -N aeroval-noresm
+#$ -N aeroval-EMEP
 #$ -l h_rt=1:00:00
 #$ -l h_rss=8G,mem_free=8G,h_data=8G 
 #$ -q research-r8.q
 #$ -S /bin/bash
 #$ -m a
 #$ -M danielh@met.no
-#$ -o /lustre/storeB/project/fou/kl/emep/People/danielh/projects/pyaerocom/AeroTools-Workshops/NorESM/4/logs/noresm.out
-#$ -e /lustre/storeB/project/fou/kl/emep/People/danielh/projects/pyaerocom/AeroTools-Workshops/NorESM/4/logs/noresm.err
+##$ -o /lustre/storeB/project/fou/kl/emep/People/danielh/projects/pyaerocom/AeroTools-Workshops/EMEP/4/logs/EMEP.out
+##$ -e /lustre/storeB/project/fou/kl/emep/People/danielh/projects/pyaerocom/AeroTools-Workshops/EMEP/4/logs/EMEP.err
 #$ -R y
 #$ -j y
 
 
-##HDIR=<your working directory>
-HDIR="/lustre/storeB/project/fou/kl/emep/People/danielh/projects/pyaerocom/AeroTools-Workshops/NorESM/4"
+HDIR=<your working directory>
+##HDIR="/lustre/storeB/project/fou/kl/emep/People/danielh/projects/pyaerocom/AeroTools-Workshops/EMEP/4"
 
 set -e
 
