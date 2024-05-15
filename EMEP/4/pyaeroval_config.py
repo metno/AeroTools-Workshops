@@ -1,5 +1,5 @@
 # %%
-your_dir = "/lustre/storeB/project/fou/kl/emep/People/danielh/projects/pyaerocom/aeroval/tmp"
+your_dir = "/lustre/storeB/project/fou/kl/emep/People/danielh/projects/pyaerocom/workshop/emep/results"
 output_dir = f"{your_dir}/data"
 coldata_dir = f"{your_dir}/coldata"
 exp_pi = "Daniel Heinesen"  # <your name>
@@ -44,7 +44,7 @@ CFG = dict(
     proj_id=proj_id,
     exp_id=exp_id,
     exp_name="Evaluation of EMEP data",
-    exp_descr=("Evaluation of EMEP data"),
+    exp_descr=("Evaluation of EMEP data for EMEP AeroTools workshop may 2024"),
     public=True,
 )
 
