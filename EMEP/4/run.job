@@ -21,7 +21,7 @@ set -e
 cd $HDIR
 
 echo "Activating AeroTools Module"
-module load /modules/MET/rhel8/user-modules/fou-kl/aerotools/pya-v2024.03.NorESM.conda
+module load /modules/MET/rhel8/user-modules/fou-kl/aerotools/pya-v2024.05.1.EMEP.conda 
 
 echo "Starting to run config file from $HDIR"
 date
