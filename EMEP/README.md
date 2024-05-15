@@ -17,9 +17,9 @@ We will be running all the code in this workshop on lustre. While it is possible
 Log onto PPI (`ssh ppi-r8login-b1.int.met.no`), then activate AeroTools
 
 ```
-module load /modules/MET/rhel8/user-modules/fou-kl/aerotools/pya-v2024.03.NorESM.conda
+module load /modules/MET/rhel8/user-modules/fou-kl/aerotools/pya-v2024.05.1.EMEP.conda 
 ```
-After easter it should be enough with
+After the next release, when everything we have looked at is released
 
 ```
 module load /modules/MET/rhel8/user-modules/fou-kl/aerotools/aerotools
