@@ -1,5 +1,5 @@
 # %%
-your_dir = "/home/danielh/Documents/pyaerocom/tmp"
+your_dir = "/lustre/storeB/project/fou/kl/emep/People/danielh/projects/pyaerocom/aeroval/tmp"
 output_dir = f"{your_dir}/data"
 coldata_dir = f"{your_dir}/coldata"
 exp_pi = "Daniel Heinesen"  # <your name>
@@ -163,7 +163,7 @@ EBAS = dict(
 from pyaerocom.io.pyaro.pyaro_config import PyaroConfig
 
 data_id = "nilupmfebas"
-url = "/home/danielh/Downloads/EIMPs_winter2017-2018_data/EIMPs_winter_2017_2018_ECOC_Levo/"
+url = "/lustre/storeB/project/fou/kl/emep/People/danielh/projects/pyaerocom/workshop/emep/obs/EIMPs_winter2017-2018_data/EIMPs_winter_2017_2018_ECOC_Levo/"
 config = PyaroConfig(
     name="pmf",
     data_id=data_id,
