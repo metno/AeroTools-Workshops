@@ -49,9 +49,6 @@ instead. The main difference is that on the AeroTools module, all commands start
 ```
 # For jupyter notebook
 pya_jupyter notebook --no-browser --ip=$(hostname -f)
-
-# For NAC
-pya_nac --help
 ```
 
 So just keep that in mind...
