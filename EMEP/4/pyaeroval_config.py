@@ -118,7 +118,10 @@ EMEP = dict(
     gridded_reader_id={
         "model": "ReadMscwCtm"
     },  # Tells pyaerocom to use the EMEP reader instead of the default aerocom reader
-    emep_vars={"organiccarbon": "SURF_ugC_PM_OM25"},
+    model_kwargs={
+        "emep_vars": {"organiccarbon": "SURF_ugC_PM_OM25"},
+        "ts_type": "daily",
+    },
     model_read_aux={
         "elementalcarbon": {
             "vars_required": ["concecCoarse", "concecFine"],
@@ -166,7 +169,7 @@ data_id = "nilupmfebas"
 url = "/home/danielh/Downloads/EIMPs_winter2017-2018_data/EIMPs_winter_2017_2018_ECOC_Levo/"
 config = PyaroConfig(
     name="pmf",
-    data_id=data_id,
+    reader_id=data_id,
     filename_or_obj_or_url=url,
     filters={
         "variables": {
@@ -186,7 +189,7 @@ config = PyaroConfig(
 # %%
 PYARO = dict(
     obs_id=config.name,  # Must be set to the name found in the config
-    obs_config=config,  # The pyaro config
+    pyaro_config=config,  # The pyaro config
     web_interface_name="Pyaro-m",  # Name that is displayed on the webpage
     obs_vars=[
         "elementalcarbon",
@@ -200,7 +203,7 @@ PYARO = dict(
 # %%
 OBS_CFG = {
     "Pyaro-m": PYARO,
-    "EBAS-m": EBAS,
+    # "EBAS-m": EBAS,
 }  # "EEA-m": EEA}
 
 CFG["obs_cfg"] = OBS_CFG
