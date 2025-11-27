@@ -2,6 +2,8 @@
 
 Below is a list of simple preparations to complete before the workshop. Don’t worry if something doesn’t work, but if you manage to finish every step, you’ll be ready for the workshop.
 
+If you encounter any issues, please contact me, Jan or IT.
+
 ## Accessing PPI
 
 Everyone should be able to connect to PPI via SSH. If you cannot, please contact me or IT before the workshop.
@@ -36,5 +38,3 @@ On PPI, navigate to `/lustre/storeB/project/fou/kl/emep/Web/AeroVal/` and try to
 cd /lustre/storeB/project/fou/kl/emep/Web/AeroVal/
 mkdir <your username>
 ```
-
-If you encounter any issues, please contact me, Heiko, Jan, or IT.

@@ -22,12 +22,12 @@ module load /modules/MET/rhel8/user-modules/fou-kl/aerotools/aerotools
 ```
 Clone this repository:
 ```
-git clone https://github.com/metno/AeroTools-Workshops.git
+git clone git@github.com:metno/AeroTools-Workshops.git
 cd AeroTools-Workshops
 ```
 Then run 
 ```
-jupyter notebook --no-browser --ip=$(hostname -f)
+pya_jupyter notebook --no-browser --ip=$(hostname -f)
 ```
 
 In the output, you should see two urls. Copy the url starting with `ppi-r8login-b1.int.met.no` into your browser. You should now see the notebooks in your browser. Open the first tutorial by locating `Workshop_081225/1/what_is_aerotools.ipynb`.
