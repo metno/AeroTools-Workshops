@@ -30,7 +30,7 @@ CFG = dict(
     # Statistical Options
     obs_remove_outliers=False,
     model_remove_outliers=False,
-    colocate_time=True,
+    colocate_time=False,
     zeros_to_nan=False,
     weighted_stats=True,
     annual_stats_constrained=True,
