@@ -1,8 +1,8 @@
-output_dir = "/lustre/storeB/users/danielh/workshop/results/data"
-coldata_dir = "/lustre/storeB/users/danielh/workshop/results/coldata"
-exp_pi = "Daniel"
-proj_id = "workshop"
-exp_id = "workshop"
+output_dir = <your desired output directory>"/data"
+coldata_dir = <your desired output directory>"/coldata"
+exp_pi = <your name>
+proj_id = <your project ID>
+exp_id = <your experiment ID>
 
 
 # Main configuration dictionary
